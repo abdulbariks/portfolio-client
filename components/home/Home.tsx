@@ -3,6 +3,11 @@ import HeroSection from './HeroSection'
 
 export default function Home() {
   return (
-    <div>Home         <HeroSection/> </div>
+    <div className="space-y-10 sm:space-y-16">
+      <HeroSection />
+      {/* <About />
+      <Experience />
+      <Projects /> */}
+    </div>
   )
 }
