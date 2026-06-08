@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { GithubLogo, XLogo } from "../icons/Icons";
+import { GithubLogo, LinkedInLogo, XLogo } from "../icons/Icons";
+import Link from "next/link";
 import { Logo } from "./Logo";
 import { NavMenu } from "./NavMenu";
 import { NavigationSheet } from "./NavigationSheet";
@@ -14,20 +15,45 @@ const Navbar = () => {
         <NavMenu className="hidden md:block" />
 
         <div className="flex items-center gap-2">
-          <Button
-            variant="outline"
-            className="hidden sm:inline-flex rounded-full shadow-none"
-            size="icon"
+          <Link
+            href="https://www.linkedin.com/in/abdul-barik1997"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <XLogo />
-          </Button>
-          <Button
-            variant="outline"
-            className="rounded-full shadow-none"
-            size="icon"
+            <Button
+              variant="outline"
+              className="hidden sm:inline-flex rounded-full shadow-none"
+              size="icon"
+            >
+              <LinkedInLogo />
+            </Button>
+          </Link>
+          <Link
+            href="https://x.com/your-x-account"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <GithubLogo className="h-5! w-5!" />
-          </Button>
+            <Button
+              variant="outline"
+              className="hidden sm:inline-flex rounded-full shadow-none"
+              size="icon"
+            >
+              <XLogo />
+            </Button>
+          </Link>
+          <Link
+            href="https://github.com/abdulbariks"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              variant="outline"
+              className="rounded-full shadow-none"
+              size="icon"
+            >
+              <GithubLogo className="h-5! w-5!" />
+            </Button>
+          </Link>
 
           {/* Mobile Menu */}
           <div className="md:hidden">
