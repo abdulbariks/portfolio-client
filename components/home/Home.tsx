@@ -5,6 +5,7 @@ import Experience from './Experience'
 import Achievement from './Achievement'
 import Education from './Education'
 import Projects from './Projects'
+import Message from './Message'
 
 export default function Home() {
   return (
@@ -12,9 +13,11 @@ export default function Home() {
       <HeroSection />
       <About />
       <Experience />
-       <Education />
       <Achievement />
+      <Education />
       <Projects />
+      <Message />
     </div>
   )
 }
+

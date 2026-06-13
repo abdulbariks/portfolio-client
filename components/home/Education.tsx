@@ -76,7 +76,7 @@ const Education = () => {
 
         <Card className="overflow-hidden border border-border/60 bg-card/90 shadow-none">
           <CardContent className="flex flex-col p-0 md:flex-row">
-            <div className="relative h-72 w-full shrink-0 overflow-hidden bg-accent md:h-auto md:w-[28rem]">
+            <div className="relative h-72 w-full shrink-0 overflow-hidden bg-accent md:h-auto md:w-md">
               <Image
                 key={education.image}
                 src={education.image}

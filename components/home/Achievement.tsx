@@ -97,7 +97,7 @@ const Achievement = () => {
               </div>
             </div>
 
-            <div className="relative h-72 w-full shrink-0 overflow-hidden bg-accent md:h-auto md:w-[28rem]">
+            <div className="relative h-72 w-full shrink-0 overflow-hidden bg-accent md:h-auto md:w-md">
               <Image
                 key={achievement.image}
                 src={achievement.image}
