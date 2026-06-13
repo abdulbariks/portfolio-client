@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Degree",
+    "title": "Bachelor of Science in Computer Science",
+    "description": "Studied core programming, algorithms, databases, and software engineering fundamentals.",
+    "image": "/globe.svg"
+  },
+  {
+    "label": "Certification",
+    "title": "Frontend Development",
+    "description": "Built responsive user interfaces using React, Next.js, TypeScript, and modern UI libraries.",
+    "image": "/file.svg"
+  },
+  {
+    "label": "Course",
+    "title": "Advanced Web Application Architecture",
+    "description": "Learned scalable frontend patterns, API integration, performance optimization, and maintainable code structure.",
+    "image": "/window.svg"
+  },
+  {
+    "label": "Learning",
+    "title": "Continuous Technology Growth",
+    "description": "Regularly practice new tools and frameworks to improve product quality and development workflow.",
+    "image": "/next.svg"
+  }
+]
