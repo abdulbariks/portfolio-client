@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Award",
+    "title": "Best Developer Portfolio",
+    "description": "Recognized for designing a fast, accessible, and conversion-focused portfolio experience.",
+    "image": "/window.svg"
+  },
+  {
+    "label": "Milestone",
+    "title": "5+ Years Building Products",
+    "description": "Delivered production-ready web applications across startups, agencies, and enterprise teams.",
+    "image": "/globe.svg"
+  },
+  {
+    "label": "Certification",
+    "title": "Modern Frontend Engineering",
+    "description": "Built scalable interfaces with React, Next.js, TypeScript, and component-driven design systems.",
+    "image": "/file.svg"
+  },
+  {
+    "label": "Impact",
+    "title": "Performance-First Delivery",
+    "description": "Optimized real-world projects for speed, accessibility, and maintainable code quality.",
+    "image": "/next.svg"
+  }
+]

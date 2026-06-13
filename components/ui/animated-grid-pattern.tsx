@@ -122,8 +122,8 @@ function getTextColor(hex: string) {
 
 
 export default function AnimatedGridPattern({
-  width = 70,
-  height = 50,
+  width = 150,
+  height = 120,
   x = -1,
   y = -1,
   strokeDasharray = 0,
@@ -299,10 +299,10 @@ export default function AnimatedGridPattern({
                     x={centerX}
                     y={centerY + 6}
                     textAnchor="middle"
-                    fontSize="13"
+                    fontSize="32"
                     fill={textColor}
                     fontWeight={700}
-                    className="select-none"
+                    className="select-none font-semibold"
                   >
                     {label}
                   </text>
