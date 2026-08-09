@@ -141,7 +141,7 @@ const Contract = () => {
 
           <div className="flex-1 border-t p-6 md:p-8 md:border-t-0 md:border-l">
             {isSent ? (
-              <div className="flex h-full min-h-[320px] flex-col items-center justify-center text-center">
+              <div className="flex h-full min-h-80 flex-col items-center justify-center text-center">
                 <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground">
                   <Check className="h-7 w-7" />
                 </div>

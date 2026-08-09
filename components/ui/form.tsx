@@ -3,13 +3,22 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 import { useFormContext } from "react-hook-form"
 import { Controller, ControllerProps, FieldPath, FieldValues } from "react-hook-form"
+import { FormProvider } from "react-hook-form"
 
-function Form({ className, ...props }: React.ComponentProps<"form">) {
+function Form({
+  className,
+  children,
+  ...props
+}: React.ComponentProps<"form"> & {
+  children: React.ReactNode
+}) {
   return (
     <form
       className={cn("space-y-6", className)}
       {...props}
-    />
+    >
+      {children}
+    </form>
   )
 }
 
@@ -73,4 +82,5 @@ export {
   FormControl,
   FormMessage,
   FormField,
+  FormProvider,
 }
