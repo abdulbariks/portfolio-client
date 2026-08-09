@@ -4,7 +4,6 @@ import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { GithubLogo } from "../icons/Icons";
 
-
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -51,8 +50,10 @@ const ProjectCard = ({
         {/* Actions */}
         <div className="flex gap-3 mt-auto">
           {liveUrl && (
-            <Button variant="default" className="rounded-full" 
-            // asChild
+            <Button
+              variant="default"
+              className="rounded-full"
+              // asChild
             >
               <a href={liveUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-1 h-4 w-4" />
@@ -64,7 +65,7 @@ const ProjectCard = ({
             <Button
               variant="outline"
               className="rounded-full shadow-none"
-            //   asChild
+              //   asChild
             >
               <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                 <GithubLogo className="mr-1 h-4 w-4" />
@@ -119,7 +120,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="relative py-20 px-6">
+    <section id="projects" className="relative py-20 px-6 scroll-mt-24">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <Badge variant="secondary" className="mb-4">

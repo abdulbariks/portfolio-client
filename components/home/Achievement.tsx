@@ -33,11 +33,13 @@ const Achievement = () => {
   };
 
   const handleNext = () => {
-    setCurrentIndex((current) => Math.min(achievements.length - 1, current + 1));
+    setCurrentIndex((current) =>
+      Math.min(achievements.length - 1, current + 1),
+    );
   };
 
   return (
-    <section id="achievements" className="relative py-20 px-6">
+    <section id="achievements" className="relative py-20 px-6 scroll-mt-24">
       <div className="mx-auto max-w-3xl">
         <div className="mb-10 flex flex-col items-center gap-4 md:flex-row md:items-end md:justify-between">
           <div className="text-center md:text-left">

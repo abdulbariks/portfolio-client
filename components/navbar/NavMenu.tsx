@@ -5,9 +5,12 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import * as React from "react"
+import * as React from "react";
 
-export const NavMenu = ({ className, ...props }: React.ComponentProps<typeof NavigationMenu>) => (
+export const NavMenu = ({
+  className,
+  ...props
+}: React.ComponentProps<typeof NavigationMenu>) => (
   <NavigationMenu
     className={cn("data-[orientation=vertical]:items-start", className)}
     {...props}
@@ -20,7 +23,18 @@ export const NavMenu = ({ className, ...props }: React.ComponentProps<typeof Nav
         <NavigationMenuLink href="#experience">Experience</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
+        <NavigationMenuLink href="#achievements">
+          Achievements
+        </NavigationMenuLink>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <NavigationMenuLink href="#education">Education</NavigationMenuLink>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
         <NavigationMenuLink href="#projects">Projects</NavigationMenuLink>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <NavigationMenuLink href="#message">Message</NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenuList>
   </NavigationMenu>

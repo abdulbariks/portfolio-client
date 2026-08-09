@@ -1,15 +1,15 @@
-import React from 'react'
-import HeroSection from './HeroSection'
-import About from './About'
-import Experience from './Experience'
-import Achievement from './Achievement'
-import Education from './Education'
-import Projects from './Projects'
-import Message from './Message'
+import React from "react";
+import HeroSection from "./HeroSection";
+import About from "./About";
+import Experience from "./Experience";
+import Achievement from "./Achievement";
+import Education from "./Education";
+import Projects from "./Projects";
+import Message from "./Message";
 
 export default function Home() {
   return (
-    <div className="space-y-10 sm:space-y-16">
+    <div className="">
       <HeroSection />
       <About />
       <Experience />
@@ -18,6 +18,5 @@ export default function Home() {
       <Projects />
       <Message />
     </div>
-  )
+  );
 }
-

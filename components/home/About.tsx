@@ -6,10 +6,9 @@ import Image from "next/image";
 import { HTMLAttributes } from "react";
 import { GithubLogo } from "../icons/Icons";
 
-
 const About = () => {
   return (
-    <section id="about" className="relative py-20 px-6">
+    <section id="about" className="relative py-20 px-6 scroll-mt-24">
       <div className="max-w-3xl mx-auto">
         <div className="flex flex-col md:flex-row-reverse gap-12">
           <ProfileImage className="hidden md:block" />
@@ -54,7 +53,12 @@ const ProfileImage = ({
 }: HTMLAttributes<HTMLDivElement>) => (
   <div className={cn("mt-10 w-48 h-48 md:w-64 md:h-64", className)} {...props}>
     <div className="relative w-full h-full rounded-2xl overflow-hidden bg-accent">
-      <Image src="/images/barik.jpg" alt="Abdul Barik" className="object-cover" fill />
+      <Image
+        src="/images/barik.jpg"
+        alt="Abdul Barik"
+        className="object-cover"
+        fill
+      />
     </div>
   </div>
 );

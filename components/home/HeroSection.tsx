@@ -3,17 +3,18 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { CircleArrowDown, Zap } from "lucide-react";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen flex items-center justify-center px-6 pt-6 overflow-hidden">
+     <div className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden scroll-mt-24">
       <AnimatedGridPattern
         numSquares={30}
         maxOpacity={0.1}
         duration={3}
         className={cn(
           "mask-[radial-gradient(500px_circle_at_center,white,transparent)]",
-          "inset-x-0 h-full skew-y-12"
+          "inset-x-0 h-full skew-y-12",
         )}
       />
       <div className="relative z-1 text-center max-w-3xl">
@@ -31,11 +32,14 @@ const HeroSection = () => {
           clean code and great design. Let&apos;s create something amazing
           together! 🚀
         </p>
-        <div className="mt-12 flex items-center justify-center gap-4">
-          <Button size="lg" className="rounded-full text-base">
-            See What I Do <CircleArrowDown className="ml-2 h-5.5! w-5.5!" />
-          </Button>
-        </div>
+        <Link href={"/#projects"}>
+          {" "}
+          <div className="mt-12 flex items-center justify-center gap-4">
+            <Button size="lg" className="rounded-full text-base">
+              See What I Do <CircleArrowDown className="ml-2 h-5.5! w-5.5!" />
+            </Button>
+          </div>
+        </Link>
       </div>
     </div>
   );
