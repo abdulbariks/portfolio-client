@@ -5,7 +5,7 @@ import Experience from "./Experience";
 import Achievement from "./Achievement";
 import Education from "./Education";
 import Projects from "./Projects";
-import Message from "./Message";
+import Contract from "./Contract";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <Achievement />
       <Education />
       <Projects />
-      <Message />
+      <Contract />
     </div>
   );
 }

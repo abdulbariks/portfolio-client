@@ -33,9 +33,6 @@ export const NavMenu = ({
       <NavigationMenuItem>
         <NavigationMenuLink href="#projects">Projects</NavigationMenuLink>
       </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuLink href="#message">Message</NavigationMenuLink>
-      </NavigationMenuItem>
     </NavigationMenuList>
   </NavigationMenu>
 );

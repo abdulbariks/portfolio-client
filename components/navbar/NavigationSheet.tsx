@@ -12,7 +12,6 @@ const mobileLinks = [
   { href: "#achievements", label: "Achievements" },
   { href: "#education", label: "Education" },
   { href: "#projects", label: "Projects" },
-  { href: "#message", label: "Message" },
 ];
 
 export const NavigationSheet = () => {
