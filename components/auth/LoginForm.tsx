@@ -46,8 +46,8 @@ export default function LoginForm() {
         <CardTitle>Admin Login</CardTitle>
       </CardHeader>
       <CardContent>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <Form {...form} onSubmit={form.handleSubmit(onSubmit)}>
+          <div className="space-y-4">
             <FormField
               control={form.control}
               name="email"
@@ -87,7 +87,7 @@ export default function LoginForm() {
             <Button type="submit" className="w-full" disabled={isLoading}>
               {isLoading ? "Signing in..." : "Sign in"}
             </Button>
-          </form>
+          </div>
         </Form>
       </CardContent>
     </Card>

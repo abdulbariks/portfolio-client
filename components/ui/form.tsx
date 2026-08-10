@@ -14,10 +14,12 @@ function Form({
 }: React.ComponentProps<"form"> & {
   children: React.ReactNode
 }) {
+  const { onSubmit, ...rest } = formProps as any
   return (
-    <FormProvider {...(formProps as any)}>
+    <FormProvider {...rest}>
       <form
         className={cn("space-y-6", className)}
+        onSubmit={onSubmit}
       >
         {children}
       </form>
