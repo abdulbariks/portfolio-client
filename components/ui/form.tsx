@@ -3,22 +3,33 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 import { useFormContext } from "react-hook-form"
 import { Controller, ControllerProps, FieldPath, FieldValues } from "react-hook-form"
-import { FormProvider } from "react-hook-form"
+import { FormProvider, useFormContext as useRHFContext } from "react-hook-form"
+
+const FormFieldContext = React.createContext<{ name?: FieldPath<FieldValues> }>({})
 
 function Form({
   className,
   children,
-  ...props
+  ...formProps
 }: React.ComponentProps<"form"> & {
   children: React.ReactNode
 }) {
   return (
-    <form
-      className={cn("space-y-6", className)}
-      {...props}
-    >
-      {children}
-    </form>
+    <FormProvider {...(formProps as any)}>
+      <form
+        className={cn("space-y-6", className)}
+      >
+        {children}
+      </form>
+    </FormProvider>
+  )
+}
+
+function FormField<TFieldValues extends FieldValues = FieldValues, TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>>({ ...props }: ControllerProps<TFieldValues, TName>) {
+  return (
+    <FormFieldContext.Provider value={{ name: props.name }}>
+      <Controller {...props} />
+    </FormFieldContext.Provider>
   )
 }
 
@@ -50,8 +61,15 @@ function FormControl({ ...props }: React.ComponentProps<"div">) {
 }
 
 function FormMessage({ className, ...props }: React.ComponentProps<"p">) {
-  const { formState } = useFormContext<FieldValues>()
-  const error = formState?.errors?.root?.message
+  const formContext = useRHFContext<FieldValues>()
+  const fieldContext = React.useContext(FormFieldContext)
+
+  if (!formContext) {
+    return null
+  }
+
+  const { formState } = formContext
+  const error = formState?.errors?.root?.message || formState?.errors[fieldContext.name as FieldPath<FieldValues>]?.message
 
   if (!error) {
     return null
@@ -66,13 +84,6 @@ function FormMessage({ className, ...props }: React.ComponentProps<"p">) {
       {error as string}
     </p>
   )
-}
-
-function FormField<
-  TFieldValues extends FieldValues = FieldValues,
-  TName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
->({ ...props }: ControllerProps<TFieldValues, TName>) {
-  return <Controller {...props} />
 }
 
 export {
