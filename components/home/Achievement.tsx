@@ -2,21 +2,17 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import achievementsData from "@/data/achievements.json";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Building2, Calendar } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
 interface AchievementItem {
   label: string;
   title: string;
-  description: string;
+  organization: string;
+  Date: string;
   image: string;
 }
 
@@ -86,9 +82,17 @@ const Achievement = () => {
               <CardTitle className="text-2xl font-semibold sm:text-3xl">
                 {achievement.title}
               </CardTitle>
-              <CardDescription className="mt-4 text-base leading-relaxed">
-                {achievement.description}
-              </CardDescription>
+
+              <div className="mt-4 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <Building2 className="h-4 w-4 text-primary" />
+                  <span>{achievement.organization}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4 text-primary" />
+                  <span>{achievement.Date}</span>
+                </div>
+              </div>
 
               <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
                 <span

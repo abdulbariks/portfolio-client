@@ -1,26 +1,26 @@
 [
   {
-    "label": "Degree",
-    "title": "Bachelor of Science in Computer Science",
-    "description": "Studied core programming, algorithms, databases, and software engineering fundamentals.",
+    "label": "Bachelor of Science(BSc)",
+    "title": "Computer Science and Engineering",
+    "institute": "United College of Aviation Science and Management (UCASM)",
+    "gpa": "",
+    "year": "2023",
     "image": "/globe.svg"
   },
   {
-    "label": "Certification",
-    "title": "Frontend Development",
-    "description": "Built responsive user interfaces using React, Next.js, TypeScript, and modern UI libraries.",
+    "label": "Higher Secondary Certificate(HSC)",
+    "title": "Science",
+    "institute": "Bhawal Badre Alam Government College",
+    "gpa": "",
+    "year": "2015",
     "image": "/file.svg"
   },
   {
-    "label": "Course",
-    "title": "Advanced Web Application Architecture",
-    "description": "Learned scalable frontend patterns, API integration, performance optimization, and maintainable code structure.",
+    "label": "Secondary School Certificate(SSC)",
+    "title": "Science",
+    "institute": "Tista K R Khadem High School",
+    "gpa": "GPA:4.56",
+    "year": "2013",
     "image": "/window.svg"
-  },
-  {
-    "label": "Learning",
-    "title": "Continuous Technology Growth",
-    "description": "Regularly practice new tools and frameworks to improve product quality and development workflow.",
-    "image": "/next.svg"
   }
 ]

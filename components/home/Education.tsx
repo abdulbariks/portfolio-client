@@ -2,21 +2,24 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import educationData from "@/data/education.json";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  GraduationCap,
+  Award,
+  Calendar,
+} from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
 interface EducationItem {
   label: string;
   title: string;
-  description: string;
+  institute: string;
+  gpa: string;
+  year: string;
   image: string;
 }
 
@@ -95,9 +98,21 @@ const Education = () => {
               <CardTitle className="text-2xl font-semibold sm:text-3xl">
                 {education.title}
               </CardTitle>
-              <CardDescription className="mt-4 text-base leading-relaxed">
-                {education.description}
-              </CardDescription>
+
+              <div className="mt-4 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <GraduationCap className="h-4 w-4 text-primary" />
+                  <span>{education.institute}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Award className="h-4 w-4 text-primary" />
+                  <span>GPA: {education.gpa}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4 text-primary" />
+                  <span>{education.year}</span>
+                </div>
+              </div>
 
               <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
                 <span

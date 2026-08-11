@@ -13,8 +13,8 @@ export default function Home() {
       <HeroSection />
       <About />
       <Experience />
-      <Achievement />
       <Education />
+      <Achievement />
       <Projects />
       <Contract />
     </div>
