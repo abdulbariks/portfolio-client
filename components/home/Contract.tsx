@@ -29,6 +29,39 @@ const initialFormState: FormValues = {
   message: "",
 };
 
+const contactInfo = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "abdulbarik1997m@gmail.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+880 1575-092830",
+  },
+  {
+    icon: MapPin,
+    label: "Address",
+    value: "Dhaka, Bangladesh",
+  },
+];
+
+const socialLinks = [
+  {
+    icon: GithubLogo,
+    label: "GitHub",
+    href: "https://github.com/abdulbariks",
+    text: "github.com/abdulbariks",
+  },
+  {
+    icon: LinkedInLogo,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/abdul-barik1997",
+    text: "linkedin.com/in/abdul-barik1997",
+  },
+];
+
 const Contract = () => {
   const [isSent, setIsSent] = useState(false);
   const form = useForm<FormValues>({
@@ -67,75 +100,36 @@ const Contract = () => {
             </p>
 
             <div className="mt-8 space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent">
-                  <Mail className="size-5 text-muted-foreground" />
+              {contactInfo.map(({ icon: Icon, label, value }) => (
+                <div className="flex items-start gap-4" key={label}>
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent">
+                    <Icon className="size-5 text-muted-foreground" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium">{label}</p>
+                    <p className="text-sm text-muted-foreground">{value}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm font-medium">Email</p>
-                  <p className="text-sm text-muted-foreground">
-                    abdulbarik@example.com
-                  </p>
-                </div>
-              </div>
+              ))}
 
-              <div className="flex items-start gap-4">
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent">
-                  <Phone className="size-5 text-muted-foreground" />
+              {socialLinks.map(({ icon: Icon, label, href, text }) => (
+                <div className="flex items-start gap-4" key={label}>
+                  <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent">
+                    <Icon className="size-5 text-muted-foreground" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium">{label}</p>
+                    <a
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-primary hover:underline"
+                    >
+                      {text}
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm font-medium">Phone</p>
-                  <p className="text-sm text-muted-foreground">
-                    +880 1234-567890
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent">
-                  <MapPin className="size-5 text-muted-foreground" />
-                </div>
-                <div>
-                  <p className="text-sm font-medium">Address</p>
-                  <p className="text-sm text-muted-foreground">
-                    Dhaka, Bangladesh
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent">
-                  <GithubLogo className="size-5 text-muted-foreground" />
-                </div>
-                <div>
-                  <p className="text-sm font-medium">GitHub</p>
-                  <a
-                    href="https://github.com/abdulbariks"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-primary hover:underline"
-                  >
-                    github.com/abdulbariks
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-accent">
-                  <LinkedInLogo className="size-5 text-muted-foreground" />
-                </div>
-                <div>
-                  <p className="text-sm font-medium">LinkedIn</p>
-                  <a
-                    href="https://www.linkedin.com/in/abdul-barik1997"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-primary hover:underline"
-                  >
-                    linkedin.com/in/abdul-barik1997
-                  </a>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
