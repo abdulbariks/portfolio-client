@@ -3,17 +3,17 @@
     "label": "Bachelor of Science(BSc)",
     "title": "Computer Science and Engineering",
     "institute": "United College of Aviation Science and Management (UCASM)",
-    "gpa": "",
+    "gpa": "CGPA:2.68",
     "year": "2023",
-    "image": "/globe.svg"
+    "image": "/images/BSc.jpg"
   },
   {
     "label": "Higher Secondary Certificate(HSC)",
     "title": "Science",
     "institute": "Bhawal Badre Alam Government College",
-    "gpa": "",
+    "gpa": "GPA:3.42",
     "year": "2015",
-    "image": "/file.svg"
+    "image": "/images/HSC.jpg"
   },
   {
     "label": "Secondary School Certificate(SSC)",
@@ -21,6 +21,6 @@
     "institute": "Tista K R Khadem High School",
     "gpa": "GPA:4.56",
     "year": "2013",
-    "image": "/window.svg"
+    "image": "/images/SSC.jpg"
   }
 ]

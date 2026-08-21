@@ -80,14 +80,14 @@ const Education = () => {
         </div>
 
         <Card className="overflow-hidden border border-border/60 bg-card/90 shadow-none">
-          <CardContent className="flex flex-col p-0 md:flex-row">
+          <CardContent className="flex flex-col p-1 md:flex-row">
             <div className="relative h-72 w-full shrink-0 overflow-hidden bg-accent md:h-auto md:w-md">
               <Image
                 key={education.image}
                 src={education.image}
                 alt={education.title}
                 fill
-                className="object-cover transition-transform duration-500"
+                className="object-cover rounded-md transition-transform duration-500"
               />
             </div>
 
