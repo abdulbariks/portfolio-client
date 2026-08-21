@@ -9,8 +9,8 @@ import { useState } from "react";
 const mobileLinks = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
-  { href: "#achievements", label: "Achievements" },
   { href: "#education", label: "Education" },
+  { href: "#achievements", label: "Achievements" },
   { href: "#projects", label: "Projects" },
 ];
 

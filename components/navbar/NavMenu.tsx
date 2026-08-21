@@ -23,12 +23,12 @@ export const NavMenu = ({
         <NavigationMenuLink href="#experience">Experience</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
+        <NavigationMenuLink href="#education">Education</NavigationMenuLink>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
         <NavigationMenuLink href="#achievements">
           Achievements
         </NavigationMenuLink>
-      </NavigationMenuItem>
-      <NavigationMenuItem>
-        <NavigationMenuLink href="#education">Education</NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink href="#projects">Projects</NavigationMenuLink>

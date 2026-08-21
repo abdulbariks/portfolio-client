@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Download } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { HTMLAttributes } from "react";
 import { GithubLogo } from "../icons/Icons";
 
@@ -23,7 +24,7 @@ const About = () => {
               Passionate about creating impactful web experiences
             </h2>
             <p className="text-muted-foreground mb-6 text-justify">
-              With over 5 years of experience in full-stack development, I
+              With over 2 years of experience in full-stack development, I
               specialize in building scalable web applications using modern
               technologies. My expertise includes React, Node.js, and cloud
               architecture. I&apos;m passionate about creating elegant solutions
@@ -32,12 +33,16 @@ const About = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-start">
               <Button className="rounded-full">
-                <GithubLogo />
-                View Github
+                <Link href="https://github.com/abdulbariks" target="_blank" className="flex flex-wrap gap-1">
+                  <GithubLogo />
+                  View Github
+                </Link>
               </Button>
-              <Button variant="outline" className="rounded-full">
-                <Download />
-                Download CV
+              <Button  variant="outline" className="rounded-full">
+                <Link href="https://drive.google.com/drive/folders/1Tk1YmTcsY9FHv1EPYAckDH_fSCMrmo3g?usp=sharing" target="_blank" className="flex flex-wrap gap-1">
+                  <Download />
+                  Download CV
+                </Link>
               </Button>
             </div>
           </div>
