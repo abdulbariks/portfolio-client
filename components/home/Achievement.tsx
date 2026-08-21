@@ -109,7 +109,7 @@ const Achievement = () => {
                 src={achievement.image}
                 alt={achievement.title}
                 fill
-                className="object-cover transition-transform duration-500"
+                className="object-content transition-transform duration-500"
               />
             </div>
           </CardContent>

@@ -54,28 +54,28 @@ const ExperienceItem = ({
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      period: "2021 - Present",
+      title: "Frontend Developer",
+      company: "Softvence Agency Delta",
+      period: "11/10/2025 - Present",
       description:
         "Led the development of enterprise-scale web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.",
-      technologies: ["React", "Node.js", "TypeScript", "AWS", "MongoDB"],
+      technologies: ["JavaScript","TypeScript","React","Next.js", "Redux", ],
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Innovations Inc",
-      period: "2019 - 2021",
+      title: "MERN Stack Developer",
+      company: "Kryzotech Solutions",
+      period: "01/01/2025 - 30/09/2025",
       description:
         "Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.",
-      technologies: ["React", "Express.js", "PostgreSQL", "Docker", "Redis"],
+      technologies: ["React","Node.js", "Express.js", "MongoDB","Firebase"],
     },
     {
-      title: "Frontend Developer",
-      company: "WebTech Studios",
-      period: "2018 - 2019",
+      title: "Content Moderator",
+      company: "Genex Infosys Limited",
+      period: "16/09/2022 - 31/12/2024",
       description:
         "Created responsive and interactive user interfaces, collaborated with designers, and optimized application performance.",
-      technologies: ["React", "JavaScript", "SASS", "Webpack", "Jest"],
+      technologies: ["MS Word", "MS Excel", "MS PowerPoint"],
     },
   ];
 

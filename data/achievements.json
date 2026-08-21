@@ -7,24 +7,31 @@
     "image": "/window.svg"
   },
   {
-    "label": "Milestone",
-    "title": "5+ Years Building Products",
-    "organization": "Freelance & Agencies",
-    "Date": "2021 - Present",
+    "label": "Award",
+    "title": "Top Performer",
+    "organization": "Genex Infosys Limited",
+    "Date": "2024",
     "image": "/globe.svg"
   },
   {
-    "label": "Certification",
-    "title": "Modern Frontend Engineering",
-    "organization": "Meta",
-    "Date": "2022",
+    "label": "Award",
+    "title": "Top Performer",
+    "organization": "Genex Infosys Limited",
+    "Date": "2023",
     "image": "/file.svg"
   },
   {
-    "label": "Impact",
-    "title": "Performance-First Delivery",
-    "organization": "Enterprise Clients",
-    "Date": "2024",
-    "image": "/next.svg"
+    "label": "Certification",
+    "title": "Next Level Web Development",
+    "organization": "Programming Hero",
+    "Date": "2026",
+    "image": "/images/level-2.png"
+  }
+  ,  {
+    "label": "Certification",
+    "title": "Web Development",
+    "organization": "Programming Hero",
+    "Date": "2025",
+    "image": "/images/level-1.png"
   }
 ]
