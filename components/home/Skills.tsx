@@ -103,7 +103,7 @@ const item = {
 const Skills = () => {
   return (
     <section id="skills" className="relative py-20 px-6 scroll-mt-24">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -129,7 +129,7 @@ const Skills = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5"
         >
           {skillCategories.map((category, index) => (
             <motion.div
