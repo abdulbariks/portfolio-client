@@ -94,214 +94,42 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "FMC Dashboard",
       description:
-        "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      image: "/images/barik.jpg",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/username/ecommerce",
-      slug: "e-commerce-platform",
+        "A modern and responsive Apps Admin Dashboard designed to efficiently manage users, applications, data, and system activities from a centralized interface. It provides clear analytics, intuitive navigation, and powerful management tools for streamlined administration and better decision-making.",
+      image: "/images/projects/fmc.png",
+      technologies: ["Next.js", "Tailwind CSS"],
+      liveUrl: "https://danielblairdashboard-front-end.vercel.app",
+      githubUrl:
+        "https://github.com/abdulbariks/danielblairdashboard-front-end",
+      slug: "Admin Dashboard designed",
     },
     {
-      title: "AI Task Manager",
+      title: "Bokli",
       description:
-        "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "Python", "TensorFlow", "FastAPI", "MongoDB"],
-      liveUrl: "https://ai-taskmanager.com",
-      githubUrl: "https://github.com/username/ai-taskmanager",
-      slug: "ai-task-manager",
+        "Smart Booking Management For Modern Service Businesses All-in-one platform for managing services, staff, branches, bookings, payments,and customer data — with your own branded mini-website.",
+      image: "/images/projects/bokli.png",
+      technologies: ["Next.js", "TypeScript", "Tap Payments", "Laravel"],
+      liveUrl: "https:bokli.io",
+      githubUrl: "https://github.com/abdulbariks/bokli",
+      slug: "Booking Management ",
     },
     {
-      title: "Real-time Chat Application",
+      title: "Joyjatra Travel",
       description:
-        "Feature-rich chat application with real-time messaging, file sharing, and video calls.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "Socket.io", "WebRTC", "Node.js", "Redis"],
-      liveUrl: "https://chatapp-demo.com",
-      githubUrl: "https://github.com/username/chat-app",
-      slug: "real-time-chat-application",
-    },
-    {
-      title: "AI Image Generator",
-      description:
-        "An AI image generator that uses a model to generate images based on a prompt.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "Next.js", "Tailwind CSS", "Shadcn UI"],
-      liveUrl: "https://ai-image-generator.com",
-      githubUrl: "https://github.com/username/ai-image-generator",
-      slug: "ai-image-generator",
-    },
-    {
-      title: "Portfolio Website",
-      description:
-        "A modern, responsive portfolio website built with a focus on clean UI and smooth animations.",
-      image: "/images/barik.jpg",
-      technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      liveUrl: "https://portfolio-demo.com",
-      githubUrl: "https://github.com/username/portfolio",
-      slug: "portfolio-website",
-    },
-    {
-      title: "Weather Dashboard",
-      description:
-        "A weather dashboard providing real-time forecasts, interactive maps, and location-based insights.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "OpenWeather API", "Chart.js", "Leaflet"],
-      liveUrl: "https://weather-dashboard-demo.com",
-      githubUrl: "https://github.com/username/weather-dashboard",
-      slug: "weather-dashboard",
-    },
-    {
-      title: "Fitness Tracker App",
-      description:
-        "A fitness tracking app with workout plans, progress monitoring, and social sharing features.",
-      image: "/images/barik.jpg",
-      technologies: ["React Native", "Firebase", "Redux", "Expo"],
-      liveUrl: "https://fitness-tracker-demo.com",
-      githubUrl: "https://github.com/username/fitness-tracker",
-      slug: "fitness-tracker-app",
-    },
-    {
-      title: "Cryptocurrency Wallet",
-      description:
-        "A secure crypto wallet supporting multiple currencies, portfolio tracking, and transactions.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "Web3.js", "Solidity", "Ethers.js"],
-      liveUrl: "https://crypto-wallet-demo.com",
-      githubUrl: "https://github.com/username/crypto-wallet",
-      slug: "cryptocurrency-wallet",
-    },
-    {
-      title: "Online Learning Platform",
-      description:
-        "A comprehensive e-learning platform with video courses, quizzes, and progress tracking.",
-      image: "/images/barik.jpg",
-      technologies: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
-      liveUrl: "https://learning-platform-demo.com",
-      githubUrl: "https://github.com/username/learning-platform",
-      slug: "online-learning-platform",
-    },
-    {
-      title: "Social Media Analytics Tool",
-      description:
-        "An analytics tool for tracking social media performance, engagement, and audience insights.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "D3.js", "Node.js", "MongoDB"],
-      liveUrl: "https://social-analytics-demo.com",
-      githubUrl: "https://github.com/username/social-analytics",
-      slug: "social-media-analytics-tool",
-    },
-    {
-      title: "Recipe Sharing App",
-      description:
-        "A community-driven recipe app with search, filters, ratings, and meal planning features.",
-      image: "/images/barik.jpg",
-      technologies: ["Flutter", "Firebase", "Provider", "Cloud Functions"],
-      liveUrl: "https://recipe-app-demo.com",
-      githubUrl: "https://github.com/username/recipe-app",
-      slug: "recipe-sharing-app",
-    },
-    {
-      title: "Inventory Management System",
-      description:
-        "A robust inventory management system with barcode scanning, alerts, and reporting.",
-      image: "/images/barik.jpg",
-      technologies: ["Vue.js", "Laravel", "MySQL", "Chart.js"],
-      liveUrl: "https://inventory-system-demo.com",
-      githubUrl: "https://github.com/username/inventory-system",
-      slug: "inventory-management-system",
-    },
-    {
-      title: "Music Streaming Service",
-      description:
-        "A music streaming platform with personalized playlists, recommendations, and offline mode.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "Node.js", "Express", "MongoDB", "AWS S3"],
-      liveUrl: "https://music-stream-demo.com",
-      githubUrl: "https://github.com/username/music-stream",
-      slug: "music-streaming-service",
-    },
-    {
-      title: "Travel Booking Website",
-      description:
-        "A travel booking platform with flight search, hotel reservations, and itinerary planning.",
-      image: "/images/barik.jpg",
-      technologies: ["Next.js", "Tailwind CSS", "Prisma", "PostgreSQL"],
-      liveUrl: "https://travel-booking-demo.com",
-      githubUrl: "https://github.com/username/travel-booking",
-      slug: "travel-booking-website",
-    },
-    {
-      title: "Task Collaboration Tool",
-      description:
-        "A collaborative task management tool with real-time updates, kanban boards, and team chat.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "Socket.io", "Node.js", "Redis", "MongoDB"],
-      liveUrl: "https://task-collab-demo.com",
-      githubUrl: "https://github.com/username/task-collab",
-      slug: "task-collaboration-tool",
-    },
-    {
-      title: "Document Management System",
-      description:
-        "A document management system with version control, sharing, and search capabilities.",
-      image: "/images/barik.jpg",
-      technologies: ["Angular", "Spring Boot", "PostgreSQL", "Elasticsearch"],
-      liveUrl: "https://doc-management-demo.com",
-      githubUrl: "https://github.com/username/doc-management",
-      slug: "document-management-system",
-    },
-    {
-      title: "Event Booking Platform",
-      description:
-        "An event booking platform with ticket sales, venue management, and attendee tracking.",
-      image: "/images/barik.jpg",
-      technologies: ["Next.js", "Stripe", "Supabase", "Tailwind CSS"],
-      liveUrl: "https://event-booking-demo.com",
-      githubUrl: "https://github.com/username/event-booking",
-      slug: "event-booking-platform",
-    },
-    {
-      title: "Healthcare Appointment App",
-      description:
-        "A healthcare appointment booking app with doctor profiles, scheduling, and reminders.",
-      image: "/images/barik.jpg",
-      technologies: ["React Native", "Node.js", "MongoDB", "Twilio"],
-      liveUrl: "https://health-app-demo.com",
-      githubUrl: "https://github.com/username/health-app",
-      slug: "healthcare-appointment-app",
-    },
-    {
-      title: "Expense Tracker",
-      description:
-        "An expense tracker with budget management, expense categorization, and visual reports.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "Chart.js", "Firebase", "Tailwind CSS"],
-      liveUrl: "https://expense-tracker-demo.com",
-      githubUrl: "https://github.com/username/expense-tracker",
-      slug: "expense-tracker",
-    },
-    {
-      title: "Virtual Classroom",
-      description:
-        "A virtual classroom platform with live classes, whiteboard, and student management.",
-      image: "/images/barik.jpg",
-      technologies: ["React", "WebRTC", "Node.js", "Socket.io", "MongoDB"],
-      liveUrl: "https://virtual-classroom-demo.com",
-      githubUrl: "https://github.com/username/virtual-classroom",
-      slug: "virtual-classroom",
-    },
-    {
-      title: "Smart Home Dashboard",
-      description:
-        "A smart home dashboard for controlling IoT devices, automations, and energy monitoring.",
-      image: "/images/barik.jpg",
-      technologies: ["Vue.js", "MQTT", "Node.js", "InfluxDB", "Grafana"],
-      liveUrl: "https://smart-home-demo.com",
-      githubUrl: "https://github.com/username/smart-home",
-      slug: "smart-home-dashboard",
+        "Joyjatra Travel is a high-performance travel management platform built with Next.js. It features a robust Role-Based Access Control (RBAC) system, real-time support messaging, and advanced data management tools.",
+      image: "/images/projects/joyjatra.png",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "express.js",
+        "Stripe",
+        "Prisma",
+        "PostgreSQL",
+      ],
+      liveUrl: "joyjatratravel-client.vercel.app",
+      githubUrl: "https://github.com/abdulbariks/JoyjatraTravel-Client",
+      slug: "Role-Based Access Control (RBAC) system",
     },
   ];
 
