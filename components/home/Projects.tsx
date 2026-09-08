@@ -94,6 +94,22 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "CINACT Dashboard",
+      description:
+        "Developed a responsive and scalable CINACT Dashboard using Next.js, TypeScript, and Tailwind CSS. Integrated REST APIs for dynamic data management and implemented real-time communication using Socket.IO. Integrated LiveKit for real-time audio/video communication, with a focus on performance, responsive UI, and maintainable architecture.",
+      image: "/images/projects/cinact.png",
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Socket.IO",
+        "LiveKit",
+      ],
+      liveUrl: "https://abbasfasaei-fo-11-a9-dcce-387-front.vercel.app",
+      githubUrl: "https://github.com/abdulbariks/cinact-dashboard",
+      slug: "CINACT Dashboard",
+    },
+    {
       title: "FMC Dashboard",
       description:
         "A modern and responsive Apps Admin Dashboard designed to efficiently manage users, applications, data, and system activities from a centralized interface. It provides clear analytics, intuitive navigation, and powerful management tools for streamlined administration and better decision-making.",

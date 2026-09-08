@@ -1,8 +1,8 @@
 [
   {
     "label": "Award",
-    "title": "Best Developer Portfolio",
-    "organization": "Tech Community Bangladesh",
+    "title": "Top Performer",
+    "organization": "Genex Infosys Limited",
     "Date": "2023",
     "image": "/images/Award-1.jpg"
   },
@@ -11,13 +11,6 @@
     "title": "Top Performer",
     "organization": "Genex Infosys Limited",
     "Date": "2024",
-    "image": "/globe.svg"
-  },
-  {
-    "label": "Award",
-    "title": "Top Performer",
-    "organization": "Genex Infosys Limited",
-    "Date": "2023",
     "image": "/images/Award-1.jpg"
   },
   {
@@ -26,8 +19,8 @@
     "organization": "Programming Hero",
     "Date": "2026",
     "image": "/images/level-2.png"
-  }
-  ,  {
+  },
+  {
     "label": "Certification",
     "title": "Web Development",
     "organization": "Programming Hero",
