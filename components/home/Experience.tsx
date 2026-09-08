@@ -58,23 +58,30 @@ const Experience = () => {
       company: "Softvence Agency Delta",
       period: "11/10/2025 - Present",
       description:
-        "Led the development of enterprise-scale web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.",
-      technologies: ["JavaScript","TypeScript","React","Next.js", "Redux", ],
+        "Developed responsive, scalable, and user-friendly web applications using React, Next.js, TypeScript, and modern UI frameworks. Integrated REST APIs, implemented reusable components, optimized performance, and collaborated with teams to deliver high-quality frontend solutions.",
+      technologies: ["JavaScript", "TypeScript", "React", "Next.js", "Redux"],
     },
     {
       title: "MERN Stack Developer",
       company: "Kryzotech Solutions",
       period: "01/01/2025 - 30/09/2025",
       description:
-        "Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.",
-      technologies: ["React","Node.js", "Express.js", "MongoDB","Firebase"],
+        "Developed full-stack web applications using MongoDB, Express.js, React, and Node.js. Built RESTful APIs, implemented authentication and database integration, created responsive user interfaces, and optimized applications for performance, scalability, and maintainability.",
+      technologies: [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Firebase",
+      ],
     },
     {
       title: "Content Moderator",
       company: "Genex Infosys Limited",
       period: "16/09/2022 - 31/12/2024",
       description:
-        "Created responsive and interactive user interfaces, collaborated with designers, and optimized application performance.",
+        "Reviewed and moderated user-generated content to ensure compliance with platform policies and community guidelines. Identified and handled inappropriate or harmful content, maintained accuracy and consistency, and supported a safe and positive online environment.",
       technologies: ["MS Word", "MS Excel", "MS PowerPoint"],
     },
   ];
