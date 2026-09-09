@@ -1,35 +1,59 @@
+# Portfolio Client
+
+Personal portfolio website for Abdul Barik built with Next.js 16, React 19, Tailwind CSS v4, and shadcn/ui.
+
+## Features
+
+- Public portfolio sections: Hero, About, Skills, Experience, Education, Achievements, Projects
+- Contact form with email delivery via Nodemailer
+- Admin dashboard with login protection
+- Data-driven content loaded from local JSON files
+- Responsive layout with animated UI components
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **UI:** React 19, Tailwind CSS v4, shadcn/ui, Framer Motion
+- **Forms:** React Hook Form
+- **Email:** Nodemailer
+- **Language:** TypeScript
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   pnpm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Create a `.env.local` file in the project root:
+   ```env
+   EMAIL_USER=your-email@gmail.com
+   EMAIL_PASS=your-app-password
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Run the development server:
+   ```bash
+   pnpm dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Environment Variables
 
-## Learn More
+| Variable | Description |
+|----------|-------------|
+| `EMAIL_USER` | Gmail address used to send contact form emails |
+| `EMAIL_PASS` | Gmail App Password (requires 2FA enabled) |
 
-To learn more about Next.js, take a look at the following resources:
+## Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start development server |
+| `pnpm build` | Build for production |
+| `pnpm start` | Start production server |
+| `pnpm lint` | Run ESLint |
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The easiest way to deploy this Next.js app is via the [Vercel Platform](https://vercel.com/new).
