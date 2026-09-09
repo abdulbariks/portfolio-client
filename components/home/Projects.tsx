@@ -94,6 +94,22 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "The Wings",
+      description:
+        "Where the world’s dancers meet the world’s stages.The Wings connects professional dancers, companies and choreographers through Green Light - a mutual, respectful signal of interest",
+      image: "/images/projects/wings.png",
+      technologies: [
+        "Next.js",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "TypeScript",
+        "Socket.IO",
+      ],
+      liveUrl: "https://elizabeth-frontend-ecru.vercel.app",
+      githubUrl: "https://github.com/abdulbariks/the-wings",
+      slug: "CINACT Dashboard",
+    },
+    {
       title: "CINACT Dashboard",
       description:
         "Developed a responsive and scalable CINACT Dashboard using Next.js, TypeScript, and Tailwind CSS. Integrated REST APIs for dynamic data management and implemented real-time communication using Socket.IO. Integrated LiveKit for real-time audio/video communication, with a focus on performance, responsive UI, and maintainable architecture.",
