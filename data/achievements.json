@@ -11,7 +11,14 @@
     "title": "Top Performer",
     "organization": "Genex Infosys Limited",
     "Date": "2024",
-    "image": "/images/Award-1.jpg"
+    "image": "/images/Award-2.jpg"
+  },
+  {
+    "label": "Contest",
+    "title": "2nd",
+    "organization": "UCASM",
+    "Date": "2018",
+    "image": "/images/contest-1.jpg"
   },
   {
     "label": "Certification",

@@ -71,6 +71,9 @@ const skillCategories: SkillCategory[] = [
       "Nginx",
       "Vercel",
       "AWS",
+      "IAM",
+      "S3",
+      "EC2",
     ],
     color: "text-emerald-500",
   },
@@ -149,7 +152,11 @@ const Skills = () => {
               <motion.div
                 className="flex items-center gap-3 mb-4"
                 whileHover={{ x: 4 }}
-                transition={{ type: "spring" as const, stiffness: 300, damping: 20 }}
+                transition={{
+                  type: "spring" as const,
+                  stiffness: 300,
+                  damping: 20,
+                }}
               >
                 <div
                   className={`shrink-0 size-12 rounded-xl bg-accent/80 flex items-center justify-center ${category.color} group-hover:scale-110 transition-transform duration-300`}
