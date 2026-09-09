@@ -3,7 +3,6 @@ import Link from "next/link";
 import { BlueSkyLogo, DribbleLogo, GithubLogo, XLogo } from "../icons/Icons";
 import { Logo } from "../navbar/Logo";
 
-
 const footerLinks = [
   {
     title: "About",
@@ -25,7 +24,7 @@ const Footer = () => {
       <div className="max-w-3xl mx-auto">
         <div className="py-12 flex flex-col justify-start items-center">
           {/* Logo */}
-          <Logo/>
+          <Logo />
           <ul className="mt-6 flex items-center gap-4 flex-wrap">
             {footerLinks.map(({ title, href }) => (
               <li key={title}>
@@ -47,16 +46,19 @@ const Footer = () => {
           </span>
 
           <div className="flex items-center gap-5 text-muted-foreground">
-            <Link href="#" target="_blank">
+            <Link href="https://github.com/abdulbariks" target="_blank">
               <GithubLogo className="h-5 w-5" />
             </Link>
-            <Link href="#" target="_blank">
+            <Link href="https://x.com/Md_Abdul_Barik" target="_blank">
               <XLogo className="h-5 w-5" />
             </Link>
-            <Link href="#" target="_blank">
+            <Link
+              href="https://bsky.app/profile/abdulbarik.bsky.social"
+              target="_blank"
+            >
               <BlueSkyLogo className="h-5 w-5" />
             </Link>
-            <Link href="#" target="_blank">
+            <Link href="https://dribbble.com/Md_Abdul_Barik" target="_blank">
               <DribbleLogo className="h-5 w-5" />
             </Link>
           </div>
