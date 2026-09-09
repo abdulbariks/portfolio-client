@@ -64,12 +64,40 @@ const socialLinks = [
 
 const Contract = () => {
   const [isSent, setIsSent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const form = useForm<FormValues>({
     defaultValues: initialFormState,
   });
 
-  const onSubmit: SubmitHandler<FormValues> = () => {
-    setIsSent(true);
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    setIsLoading(true);
+    setError(null);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        const result = await response.json();
+        throw new Error(result.error || "Failed to send message.");
+      }
+
+      setIsSent(true);
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please try again.",
+      );
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleSendAnother = () => {
@@ -215,8 +243,10 @@ const Contract = () => {
                     )}
                   />
 
-                  <Button type="submit" className="w-full">
-                    Send Message
+                  {error && <p className="text-sm text-destructive">{error}</p>}
+
+                  <Button type="submit" className="w-full" disabled={isLoading}>
+                    {isLoading ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </FormProvider>
